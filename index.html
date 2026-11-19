@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0716" />
+  <meta name="color-scheme" content="dark" />
+  <meta property="og:type" content="website" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="description" content="Nime RD: descubre tu próximo anime favorito, encuentra estrenos, sigue las emisiones y consulta plataformas oficiales de reproducción." />
+  <meta property="og:title" content="Nime RD — Tu universo anime" />
+  <meta property="og:description" content="Descubre tendencias, estrenos y anime en emisión. Todo en un solo lugar." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Nime RD — Tu universo anime</title>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="site-shell">
+    <div class="top-note"><span class="note-spark">✦</span> TU PRÓXIMA OBSESIÓN EMPIEZA AQUÍ <span class="note-spark">✦</span></div>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#inicio" aria-label="Nime RD, inicio">
+          <span class="brand-symbol"><span class="brand-pupil"></span></span>
+          <span class="brand-word">NIME<span>RD</span><small>EL UNIVERSO ANIME</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a href="#inicio" data-route="inicio" class="nav-link active">Inicio</a>
+          <a href="#explorar" data-route="explorar" class="nav-link">Explorar</a>
+          <a href="#emision" data-route="emision" class="nav-link">En emisión</a>
+          <a href="#calendario" data-route="calendario" class="nav-link">Calendario</a>
+        </nav>
+        <div class="header-actions">
+          <button id="header-search" class="icon-action desktop-search" aria-label="Buscar anime" title="Buscar (Ctrl + K)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg>
+          </button>
+          <button class="favorites-trigger" data-goto="favoritos" aria-label="Mi lista de favoritos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.6 5.6 0 0 0-7.9 0l-.9.9-.9-.9a5.6 5.6 0 0 0-7.9 7.9L12 21l8.8-8.5a5.6 5.6 0 0 0 0-7.9Z"/></svg><span>Mi lista</span><span class="favorite-count" id="favorites-count">0</span></button>
+          <button id="mobile-menu-trigger" class="mobile-menu-trigger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
+        <a href="#inicio">Inicio</a><a href="#explorar">Explorar</a><a href="#emision">En emisión</a><a href="#calendario">Calendario</a><a href="#favoritos">Mi lista</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section id="home-view" class="view container">
+        <div class="hero" id="hero">
+          <div class="hero-cover-glow" aria-hidden="true"></div>
+          <div class="hero-spot" id="hero-spot" aria-hidden="true"></div>
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="live-pulse"></span><span>EL ANIME DEL MOMENTO</span><span class="eyebrow-divider"></span><span id="hero-category">DESTACADO</span></div>
+            <div class="hero-subtitle">DESCUBRE TU PRÓXIMA HISTORIA</div>
+            <h1 id="hero-title">Un mundo de historias.<br><em>Un solo lugar.</em></h1>
+            <p id="hero-description">Explora nuevas aventuras, sigue tus estrenos favoritos y descubre qué ver después. Bienvenido a tu universo anime.</p>
+            <div class="hero-tags" id="hero-tags"><span>Anime</span><span>Estrenos</span><span>Tendencias</span></div>
+            <div class="hero-buttons">
+              <button id="hero-primary" class="button button-primary"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m8 5 11 7-11 7z"/></svg><span>Empezar a explorar</span></button>
+              <button id="hero-secondary" class="button button-glass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11.5V17M12 7v1"/></svg><span>Más información</span></button>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true"><div class="hero-cover-wrap"><img id="hero-art-image" src="assets/art/eclipse.svg" alt="" /></div><div class="art-backdrop"></div><div class="hero-art-ring ring-one"></div><div class="hero-art-ring ring-two"></div></div>
+          <div class="hero-bottom"><div class="hero-pagination" id="hero-pagination" aria-label="Seleccionar anime destacado"></div><span class="hero-tagline">IMAGINA MÁS. MIRA MÁS. <span>✦</span></span></div>
+        </div>
+        <div id="status-banner" class="status-banner hidden" role="status"></div>
+        <section class="feature-strip" aria-label="Lo mejor de Nime RD">
+          <div class="feature-block"><span class="feature-icon">✦</span><div><strong>Estrenos al día</strong><span>Entérate de lo que viene</span></div></div>
+          <div class="feature-block"><span class="feature-icon">◷</span><div><strong>Calendario semanal</strong><span>Sigue cada emisión</span></div></div>
+          <div class="feature-block"><span class="feature-icon">♡</span><div><strong>Tu lista personal</strong><span>Guarda lo que te encanta</span></div></div>
+          <div class="feature-block feature-last"><span class="feature-icon">↗</span><div><strong>Dónde mirar</strong><span>Accede a opciones oficiales</span></div></div>
+        </section>
+        <section class="content-section" id="trending-section">
+          <div class="section-heading"><div><span class="section-kicker">LO QUE TODOS ESTÁN VIENDO</span><h2><span class="title-icon">✧</span> En tendencia <span class="title-accent">ahora</span></h2></div><div class="section-actions"><button class="carousel-arrow" data-scroll="trending-track" data-direction="-1" aria-label="Anterior">‹</button><button class="carousel-arrow" data-scroll="trending-track" data-direction="1" aria-label="Siguiente">›</button><button class="view-all" data-goto="explorar">Ver catálogo <span>↗</span></button></div></div>
+          <div class="anime-track" id="trending-track"><div class="loading-cards" aria-label="Cargando anime"></div></div>
+        </section>
+        <section class="discovery-banner"><div class="discovery-orb"></div><div class="discovery-copy"><span>✦ UN UNIVERSO POR DESCUBRIR</span><h2>¿Sin saber <em>qué ver?</em></h2><p>Encuentra tu próxima gran historia entre miles de aventuras.</p><button data-goto="explorar" class="button button-white">Explorar todo el anime <span>↗</span></button></div><div class="discovery-type" aria-hidden="true">N<span>★</span>RD</div></section>
+        <section class="content-section" id="season-section"><div class="section-heading"><div><span class="section-kicker">RECIÉN LLEGADOS</span><h2><span class="title-icon">✧</span> Esta <span class="title-accent">temporada</span></h2></div><button class="view-all" data-goto="emision">Ver en emisión <span>↗</span></button></div><div class="anime-track" id="season-track"><div class="loading-cards"></div></div></section>
+        <section class="schedule-home-section"><div class="section-heading"><div><span class="section-kicker">NO TE PIERDAS NI UN EPISODIO</span><h2><span class="title-icon">◷</span> Próximas <span class="title-accent">emisiones</span></h2></div><button class="view-all" data-goto="calendario">Calendario completo <span>↗</span></button></div><div class="schedule-list" id="home-schedule"></div></section>
+      </section>
+      <section id="browse-view" class="view container hidden"><div class="page-heading"><span class="section-kicker" id="browse-kicker">CADA HISTORIA CUENTA</span><h1 id="browse-heading">Explora el <em>universo anime</em></h1><p id="browse-subheading">Filtra por género, encuentra nuevos favoritos y sumérgete en algo diferente.</p></div><div class="browse-controls"><div class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5.5 5.5"/></svg><input id="browse-search" type="search" placeholder="Busca tu próximo anime..." autocomplete="off" /><span class="shortcut-hint">/</span></div><select id="genre-select" aria-label="Filtrar por género"><option value="">Todos los géneros</option><option value="Action">Acción</option><option value="Adventure">Aventura</option><option value="Comedy">Comedia</option><option value="Drama">Drama</option><option value="Fantasy">Fantasía</option><option value="Romance">Romance</option><option value="Sci-Fi">Ciencia ficción</option><option value="Slice of Life">Vida cotidiana</option><option value="Sports">Deportes</option><option value="Mystery">Misterio</option><option value="Supernatural">Sobrenatural</option></select><select id="sort-select" aria-label="Ordenar resultados"><option value="POPULARITY_DESC">Más populares</option><option value="TRENDING_DESC">En tendencia</option><option value="SCORE_DESC">Mejor valorados</option><option value="START_DATE_DESC">Más recientes</option></select></div><p class="results-label" id="results-label">Buscando historias para ti...</p><div class="browse-grid" id="browse-grid"></div><div class="load-more-wrap"><button id="load-more" class="button button-outline hidden">Cargar más <span>↓</span></button></div></section>
+      <section id="schedule-view" class="view container hidden"><div class="page-heading"><span class="section-kicker">TU CITA CON CADA ESTRENO</span><h1>Calendario de <em>emisiones</em></h1><p>Horarios aproximados mostrados en hora de República Dominicana (AST, UTC−4).</p></div><div class="calendar-tabs" id="calendar-tabs" role="tablist" aria-label="Días de la semana"></div><div class="calendar-grid" id="calendar-grid"></div><p class="calendar-note">Los horarios dependen de las fuentes de datos y pueden variar. El estreno en plataformas de streaming puede ocurrir más tarde.</p></section>
+      <section id="favorites-view" class="view container hidden"><div class="page-heading"><span class="section-kicker">TUS HISTORIAS FAVORITAS</span><h1>Mi <em>lista</em></h1><p>Guarda animes para verlos después. Tu lista se conserva en este navegador.</p></div>
+<div class="library-tools" aria-label="Gestionar favoritos"><label class="library-search-wrap" for="library-search">Filtrar mi lista <input id="library-search" type="search" placeholder="Buscar en mis favoritos..." autocomplete="off" /></label><div class="library-toolbar"><button class="button button-outline" id="export-favorites" type="button">↓ Exportar lista</button><button class="button button-outline" id="import-favorites" type="button">↑ Importar lista</button><input id="import-favorites-file" type="file" accept="application/json,.json" class="visually-hidden" aria-label="Seleccionar archivo JSON de favoritos" /></div></div>
+<div class="browse-grid" id="favorites-grid"></div><p class="library-notice">Tus favoritos no se envían a servidores de Nime RD. Puedes exportarlos para conservar una copia o pasarlos a otro dispositivo.</p></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-content"><div class="footer-brand"><a class="brand" href="#inicio"><span class="brand-symbol"><span class="brand-pupil"></span></span><span class="brand-word">NIME<span>RD</span><small>EL UNIVERSO ANIME</small></span></a><p>El lugar donde comienza tu próxima historia.</p></div><div class="footer-links"><a href="#inicio">Inicio</a><a href="#explorar">Catálogo</a><a href="#calendario">Calendario</a><a href="#favoritos">Mi lista</a></div><div class="footer-credits"><p>Catálogo y metadatos mediante <a href="https://anilist.co" target="_blank" rel="noopener noreferrer">AniList</a>. Sitio independiente, no afiliado a AniList.</p><p>Los enlaces a plataformas externas están sujetos a disponibilidad regional y derechos de transmisión. <a href="privacidad.html">Privacidad</a></p><span>© <span id="current-year"></span> Nime RD · Hecho para fans ✦</span></div></div></footer>
+  </div>
+  <div id="modal-overlay" class="modal-overlay hidden" role="presentation"><div class="modal" id="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Cerrar ventana">×</button><div id="modal-body"></div></div></div>
+  <div id="video-overlay" class="modal-overlay video-overlay hidden" role="presentation"><div class="video-panel" role="dialog" aria-modal="true" aria-label="Reproductor de video"><div class="video-heading"><div><span class="section-kicker">NIME RD · PLAYER</span><h2 id="video-heading-text">Reproducción</h2></div><button id="video-close" class="modal-close video-close" aria-label="Cerrar reproductor">×</button></div><div id="player-mount"></div><p id="player-caption" class="video-caption"></p></div></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
